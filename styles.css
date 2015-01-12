@@ -1,0 +1,182 @@
+.GitHub {
+  width:18%;
+  margin-left:180px;
+  margin-right:50px;
+  margin-top:250px;
+  -webkit-animation: bounce 2s ;
+  border:5px solid maroon;
+  }
+
+@-webkit-keyframes bounce {
+  0% {
+    transform:translateY(-100%);
+    opacity: 0;
+  }
+  15% {
+    transform:translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+    transform:translateY(-70%);
+  }
+  42% {
+    transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+  51% {
+    transform:translateY(-30%);
+  }
+  60% {
+    transform:translateY(0%);
+    padding-bottom: 7px;
+  }
+  68% {
+    transform:translateY(-15%);
+  }
+  76% {
+    transform:translateY(0%);
+    padding-bottom: 8px;
+  }
+  81%{
+    transform:translateY(-10%);
+    padding-bottom:8px;
+  }
+  88% {
+    transform:translateY(-7%);
+  }
+  93% {
+    transform:translateY(0%);
+    padding-bottom: 9px;
+  }
+  97% {
+    transform:translateY(-3%);
+  }
+  100% {
+    transform:translateY(0);
+    padding-bottom: 9px;
+    opacity: 1;
+  }
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  -webkit-animation: square-to-circle 3s infinite;
+  margin-left:100px;
+  margin-top:15px;
+  margin-bottom:50px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.square p {
+  text-align:center;
+  padding-top:40%;
+}
+
+@-webkit-keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:white;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:snow;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 0% 50% 0;
+    background:darkred;
+    -webkit-transform:rotate(90deg);
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+    -webkit-transform:rotate(135deg);
+  }
+  100% {
+    border-radius:50% 50% 50% 0;
+    background:firebrick;
+    -webkit-transform:rotate(180deg);
+  }
+}
+
+.panetop{
+  width: 83%;
+  height: 176px;
+  border: solid 4px;
+  margin-left:7%;
+  margin-right:6%;
+  margin-top: 5%;
+  margin-bottom:1;
+}
+
+.panebottom {
+  width:87%;
+  height:176px;
+  border:solid 4px;
+  margin-left:5%;
+  margin-right:4%;
+  margin-bottom:1%;
+  margin-top:0;
+}
+
+.window {
+  width: 214px;
+  height: 400px;
+  border: solid 5px;
+  float:left;
+  margin-left:30px;
+  margin-top:30px;
+  padding:0;
+  position:relative;
+}
+
+.panebottom {
+  -webkit-transition: all 1s ease;
+}
+
+.panebottom:hover {
+  margin-top:-210px;
+  border-bottom: solid 190px firebrick;
+}
+
+.Education {
+  margin-top:100px;
+  margin-left:30%;
+  width:400px;
+  height:250px;
+  border-radius:25%;
+  background-color:white;
+  opacity:0;
+  -webkit-animation: fadein 5s ease forwards;
+  font-size:20px;
+  text-align:center;
+  font-family: 'Gloria Hallelujah' cursive;
+}
+
+@-webkit-keyframes fadein {
+  0%{
+    opacity:0;
+  }
+  50% {
+    opacity:50;\
+  }
+  100% {
+    opacity:100;
+    background-color:darkred}
+  }
+
+  .Education p {
+    -webkit-animation: slidein 2s 1s backwards;
+    width:400px;
+    margin-left:8px;
+  }
+
+  @-webkit-keyframes slidein {
+    0% {-webkit-transform: translateX(100em);visibility:hidden;}
+  }
+  100% {
+    visibility:visible;
+  }
